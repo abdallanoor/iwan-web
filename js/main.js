@@ -4,5 +4,6 @@ bar.onclick = function () {
   navBar.classList.toggle("active");
 };
 function changeIcon(x){
-  x.classList.toggle("fa-x")
+  x.classList.toggle("fa-xmark")
+
 }
