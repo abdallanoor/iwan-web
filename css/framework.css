@@ -1,6 +1,7 @@
 :root {
-  --green-color: #0c5a36;
-  --yellow-color: #d2b359;
+  --main-color: #0d6fad;
+  --main-alt-color: #489cdc;
+  --second-color: #778fa4;
   --balck-color: #121413;
   --grey-color: #646464;
 }
@@ -158,11 +159,11 @@
 .bg-eee {
   background-color: #eee;
 }
-.bg-green {
-  background-color: var(--green-color);
+.bg-blue {
+  background-color: var(--main-color);
 }
-.bg-yellow {
-  background-color: var(--yellow-color);
+.bg-second {
+  background-color: var(--second-color);
 }
 .bg-grey {
   background-color: var(--grey-color);
@@ -173,11 +174,14 @@
 .c-white {
   color: #edf0f1;
 }
-.c-green {
-  color: var(--green-color);
+.c-main {
+  color: var(--main-color);
 }
-.c-yellow {
-  color: var(--yellow-color);
+.c-main-alt {
+  color: var(--main-alt-color);
+}
+.c-second {
+  color: var(--second-color);
 }
 .c-grey {
   color: var(--grey-color);
