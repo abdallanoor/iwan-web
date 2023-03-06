@@ -1,8 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
 /* --------------------------- Start global Rules --------------------------- */
 :root {
-  --yellow-color: #d2b359;
-  --green-color: #0c5a35;
+  --main-color: #0d6fad;
+  --main-alt-color: #489cdc;
+  --second-color: #778fa4;
   --balck-color: #121413;
   --grey-color: #646464;
   --main-transition: 0.3s;
@@ -80,14 +81,17 @@ header .container {
   position: relative;
   padding: 5px 15px;
 }
+.title {
+  margin-left: 3px;
+}
 .logo img {
-  width: 65px;
-  height: 65px;
+  width: 41px;
+  height: 68px;
 }
 @media (max-width: 767px) {
   .logo img {
-    width: 60px;
-    height: 60px;
+    width: 35px;
+    height: 57px;
   }
 }
 
@@ -96,7 +100,7 @@ header .container {
   font-size: 25px;
 }
 .title span {
-  font-size: 10.2px;
+  font-size: 10.4px;
 }
 .nav-links li {
   display: inline-block;
@@ -104,32 +108,43 @@ header .container {
 }
 .nav-links li a {
   transition: all var(--main-transition) ease 0s;
-  color: var(--green-color);
+  color: var(--balck-color);
+  font-weight: 500;
 }
 .nav-links li a:hover {
-  color: var(--yellow-color);
+  color: var(--main-color);
 }
 .container .contact {
-  background-color: rgb(12, 90, 53, 1);
-  border-radius: 6px;
-  padding: 13px 16px;
+  background-color: var(--main-color);
+  border-radius: 3px;
+  padding: 13px 25px;
+
   transition: all 0.25s ease;
+  cursor: pointer;
+  /* border: 1px solid #ddd; */
 }
 .container .contact:hover {
-  background-color: rgb(13, 95, 58);
-  transform: translateY(-2px);
+  background-color: white;
+  color: var(--green-color);
   box-shadow: 0 5px 15px rgba(1 1 1/ 15%);
 }
+.container .contact a {
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: 600;
+}
+.container .contact:hover a {
+  color: var(--main-color);
+}
 .bar {
-  font-size: 22px;
   display: none;
   cursor: pointer;
 }
+.bar i {
+  font-size: 22px;
+  transition: all 0.3s;
+}
 @media (max-width: 767px) {
-  .logo img {
-    width: 55px;
-    height: 55px;
-  }
   header {
     box-shadow: none;
   }
@@ -152,9 +167,9 @@ header .container {
     z-index: 1111;
   }
   .nav-bar.active {
-     height: 270px;
+    height: 256.8px;
     padding: 30px;
-    box-shadow: 0px 10px 15px -4px rgb(1 1 1 / 9%);
+    box-shadow: 0px 10px 15px -4px rgb(1 1 1 / 15%);
   }
   .nav-bar ul {
     display: flex;
@@ -166,9 +181,10 @@ header .container {
   .nav-bar.active ul {
     opacity: 1;
   }
-  .nav-bar ul li:not(:last-child) {
+  .nav-bar ul li {
     padding-bottom: 40px;
   }
+
   .container .contact {
     display: none;
   }
