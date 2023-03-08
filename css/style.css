@@ -257,7 +257,6 @@ header .container {
   color: var(--main-color);
   line-height: 1.5;
   margin: 20px auto;
-  max-width: 500px;
 }
 
 @media (max-width: 991px) {
