@@ -172,7 +172,7 @@
   background-color: var(--balck-color);
 }
 .c-white {
-  color: #edf0f1;
+  color: white;
 }
 .c-main {
   color: var(--main-color);
@@ -263,11 +263,24 @@
   justify-content: center;
 }
 .btn-shap {
-  border-radius: 4px;
-  padding: 9px 25px;
-  border: none;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 19px;
+  letter-spacing: 5px;
+  background-color: var(--main-color);
+  transition: var(--main-transition);
+  padding:  15px 25px;
+  color: #fff;
+  fill: var(--main-color);
   cursor: pointer;
-  /* letter-spacing: 1.1px; */
+  border: 1px solid var(--main-color);
 }
-
+.btn-shap:hover {
+  background-color: white;
+  color: var(--main-color);
+  fill: white;
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+}
 /* ---------------------------- End Components ---------------------------- */
