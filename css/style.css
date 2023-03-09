@@ -81,7 +81,8 @@ ul {
   padding: 10px;
 }
 .head .container {
-  padding: 20px 0 20px 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 @media (max-width: 767px) {
   .head .container {
@@ -181,7 +182,6 @@ header .container {
   .bar {
     display: block;
   }
-
   .nav-bar {
     position: absolute;
     height: 0;
@@ -489,12 +489,8 @@ header .container {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  padding: 40px 0px 75px 0px;
-}
-@media (max-width: 767px) {
-  .discount {
-    padding: 40px 20px 75px 20px;
-  }
+  padding-top: 40px;
+  padding-bottom: 70px;
 }
 .discount .image {
   flex-basis: 50%;
@@ -557,6 +553,8 @@ header .container {
 @media (max-width: 991px) {
   .discount .form .submit {
     width: 100%;
+    display: block;
+    text-align: center;
   }
 }
 .discount h2 {
