@@ -540,7 +540,7 @@ header .container {
 .discount .form {
   flex-basis: 50%;
   display: flex;
-  align-items: stretch;
+  align-items: center;
   flex-direction: column;
 }
 @media (max-width: 991px) {
