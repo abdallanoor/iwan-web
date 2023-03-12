@@ -492,12 +492,19 @@ header .container {
   padding-top: 40px;
   padding-bottom: 70px;
 }
+@media (max-width: 767px) {
+  .discount {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
 .discount .image {
   flex-basis: 50%;
 }
 @media (max-width: 991px) {
   .discount .image {
     margin-bottom: 30px;
+    flex-basis: 100%;
   }
 }
 .box {
@@ -517,19 +524,27 @@ header .container {
   line-height: 1.7;
 }
 .box .line a {
-  color: #064475;
+  color: var(--grey-color);
   font-size: 18px;
 }
 .box .line a:hover {
   color: #313131;
 }
-
+.discount h2 {
+  color: var(--main-color);
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 36px;
+}
 .discount .form {
   flex-basis: 50%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
 }
 @media (max-width: 991px) {
-  .discount .form,
-  .discount .image {
+  .discount .form {
     flex-basis: 100%;
   }
 }
@@ -556,13 +571,6 @@ header .container {
     display: block;
     text-align: center;
   }
-}
-.discount h2 {
-  color: var(--main-color);
-  padding-bottom: 20px;
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 36px;
 }
 /* ------------------------------ End Contact ----------------------------- */
 /* ------------------------------ Start Footer ------------------------------ */
