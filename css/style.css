@@ -577,8 +577,9 @@ header .container {
 }
 .tabs li {
   margin: 0 -1px;
+  cursor: pointer;
 }
-.tabs li a {
+.tabs li p {
   background: white;
   font-size: 20px;
   padding: 8px 30px;
@@ -587,11 +588,12 @@ header .container {
   font-weight: 600;
   border: 1px solid #064475;
   color: rgba(0, 0, 0, 0.82);
+  transition: all 0.2s;
 }
-.tabs li a:hover {
+.tabs li p:hover {
   color: #064475;
 }
-.tabs li.uk-active a {
+.tabs li.uk-active p {
   background: #064475;
   font-size: 25px;
   padding: 8px 30px;
