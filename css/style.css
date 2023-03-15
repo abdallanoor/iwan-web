@@ -2,7 +2,7 @@
 /* --------------------------- Start global Rules --------------------------- */
 :root {
   --main-color: #0d6fad;
-  --main-alt-color: #489cdc;
+  --main-alt-color: #064475;
   --section-background: rgba(13, 111, 173, 20%);
   --second-color: #778fa4;
   --balck-color: #121413;
@@ -81,7 +81,7 @@ ul {
   background-image: url(../images/bg2.png);
   background-position: center center;
   background-size: 100px auto;
-  opacity: 0.8;
+  opacity: 0.9;
   background-color: #064475;
   padding: 10px;
 }
@@ -187,14 +187,9 @@ header .container {
 .nav-links li a {
   transition: all var(--main-transition) ease 0s;
   color: var(--balck-color);
-  font-weight: 400;
+  font-weight: 500;
   letter-spacing: 1.6px;
 }
-/* @media (max-width: 767px) {
-  .nav-links li a {
-    font-weight: 400;
-  }
-} */
 .nav-links li a:hover,
 .nav-links li a.active-page {
   color: var(--main-color);
@@ -271,6 +266,9 @@ header .container {
     text-align: center;
   }
 }
+.landing .text {
+  text-align: center;
+}
 .landing .text h1 {
   font-size: 35px;
   font-weight: 500;
@@ -282,7 +280,6 @@ header .container {
     font-size: 27px;
   }
 }
-
 .landing .text p {
   font-size: 23px;
   color: var(--main-color);
@@ -313,7 +310,6 @@ header .container {
     width: 100%;
   }
 }
-
 .landing .change-btn {
   margin-right: 10px;
   background-color: white;
@@ -329,18 +325,89 @@ header .container {
   background-color: var(--main-color);
   color: white;
 }
-/* .landing .image img {
-  width: 600px;
-  position: relative;
-  animation: top-and-down 5s linear infinite;
-}
-
-@media (max-width: 991px) {
-  .landing .image img {
-    display: none;
-  }
-} */
 /* ------------------------------ End Landig ------------------------------ */
+/* --------------------------- Srart Testimonials --------------------------- */
+.testi-bg {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-image: url(../images/bg3.png);
+  background-color: #ffffff;
+  background-size: 250px auto;
+}
+@media (max-width: 767px) {
+  .testi-bg  .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.main-testi {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.testimonials {
+  width: 90%;
+  margin: auto;
+}
+.testimonials .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  margin-bottom: 40px;
+  padding: 20px;
+  
+}
+/* @media (max-width: 767px){
+    .testimonials .slide{
+      padding: 20px;
+    }
+} */
+.testi-text {
+  color: #444444;
+  font-size: 20px;
+  line-height: 1.5;
+  font-style: italic;
+}
+.testi-foot {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.testi-name {
+  color: #7a7a7a;
+  font-weight: 600;
+}
+.testi-title {
+  font-weight: 400;
+  color: var(--main-color);
+}
+.padding {
+  padding-bottom: 30px;
+}
+.swiper-font::after,
+.swiper-font::before {
+  font-size: 15px;
+  color: var(--main-color);
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+.swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+}
+.swiper-pagination-bullet-active {
+  width: 7px;
+  height: 7px;
+  background-color: #444444;
+}
+/* --------------------------- End Testimonials --------------------------- */
 /* ------------------------------- Start FAQS ------------------------------- */
 .faqs {
   background-color: var(--section-background);
@@ -556,6 +623,7 @@ header .container {
   line-height: 1.5;
   color: rgba(0, 0, 0, 0.82);
 }
+
 .tabGroup {
   display: flex;
   flex-direction: column;
@@ -563,12 +631,12 @@ header .container {
   justify-content: center;
   width: 100%;
 }
+/* ---------------------------- */
 .uk-margin {
   margin-top: 20px !important;
-}
-.uk-margin {
   margin-bottom: 20px;
 }
+/* ---------------------------- */
 .tabs {
   display: flex;
   align-items: center;
@@ -588,7 +656,6 @@ header .container {
   font-weight: 600;
   border: 1px solid #064475;
   color: rgba(0, 0, 0, 0.82);
-
 }
 .tabs li p:hover {
   color: #064475;
@@ -617,7 +684,7 @@ header .container {
   display: block;
   animation: fade 1s ease;
 }
-
+/* ---------------------------- */
 .plans30 ul {
   display: flex;
   flex-wrap: wrap;
@@ -766,6 +833,7 @@ span.rd {
   border: none;
   margin-bottom: 0;
 }
+/* ---------------------------- */
 .signup {
   display: flex;
   align-items: center;
@@ -800,7 +868,7 @@ span.rd {
   background: #064475;
   color: white;
   fill: #064475;
-  box-shadow: 0 8px 8px -4px lightblue;
+  box-shadow: 0 3px 10px rgb(6 68 117 / 30%);
   transform: scale(1.05);
 }
 @keyframes fade {
