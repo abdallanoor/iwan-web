@@ -33,7 +33,6 @@ for (i = 0; i < acc.length; i++) {
         panel.style.maxHeight = null;
       }
     }
-
     // Toggle the clicked section using a ternary operator
     isActive ? this.classList.remove("active") : this.classList.add("active");
 
@@ -100,5 +99,23 @@ tabs.forEach((tab, index) => {
   });
 });
 // to run the animation initially when the page load
-tabs[0].click();
+// tabs[0].click();
 /* ------------------------------ Pricing page ------------------------------ */
+/* -------------------------------- Swiper JS ------------------------------- */
+var swiper = new Swiper(".mySwiper", {
+  grabCursor:true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 5000,
+    disableOnInteraction: false,
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
+/* -------------------------------- Swiper JS ------------------------------- */
