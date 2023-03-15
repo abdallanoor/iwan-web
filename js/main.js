@@ -105,6 +105,7 @@ tabs.forEach((tab, index) => {
 var swiper = new Swiper(".mySwiper", {
   grabCursor:true,
   centeredSlides: true,
+   loop: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
