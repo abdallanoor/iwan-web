@@ -335,7 +335,7 @@ header .container {
   background-size: 250px auto;
 }
 @media (max-width: 767px) {
-  .testi-bg  .container {
+  .testi-bg .container {
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -358,7 +358,6 @@ header .container {
   height: auto;
   margin-bottom: 40px;
   padding: 20px;
-  
 }
 /* @media (max-width: 767px){
     .testimonials .slide{
@@ -883,7 +882,9 @@ span.rd {
 /* ------------------------------ Start Contact ----------------------------- */
 .discount {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
+  /* justify-content: center; */
+  /* align-items: center; */
   padding-top: 40px;
   padding-bottom: 70px;
 }
@@ -891,15 +892,16 @@ span.rd {
   .discount {
     padding-left: 20px;
     padding-right: 20px;
+    flex-direction: column;
   }
 }
-.discount .image {
+/* .discount .image {
   flex-basis: 50%;
-}
+} */
 @media (max-width: 991px) {
   .discount .image {
     margin-bottom: 30px;
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
   }
 }
 .box {
@@ -927,24 +929,26 @@ span.rd {
 }
 
 .discount .form {
-  flex-basis: 50%;
+  /* flex-basis: 50%; */
+
   display: flex;
   align-items: stretch;
   flex-direction: column;
-  width: 100%;
+  width: 99%;
+  position: relative;
 }
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .discount .form {
     flex-basis: auto;
   }
-}
+} */
 .discount .form .input {
   display: block;
   width: 100%;
   border: none;
   border-bottom: solid 1px #ccc;
   margin-bottom: 25px;
-  padding: 15px;
+  padding: 10px;
   background-color: #f9f9f9;
   caret-color: var(--main-color);
 }
