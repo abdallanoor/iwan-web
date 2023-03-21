@@ -300,7 +300,7 @@ header .container {
 .our-courses {
   padding-top: 75px;
   padding-bottom: 75px;
-  background-color: #f4f6f7;
+  /* background-color: #f4f6f7; */
 }
 .our-courses .container {
   text-align: center;
@@ -328,7 +328,7 @@ header .container {
 .our-courses .container .course {
   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
   border-radius: 6px;
-  background-color: #f4f6f7;
+  /* background-color: #f4f6f7; */
   transition: all var(--main-transition);
 }
 .our-courses .container .course:hover {
@@ -340,7 +340,7 @@ header .container {
 }
 @media (max-width: 767px) {
   .our-courses .container .course img {
-    width: 90%;
+    width: 95%;
   }
 }
 .our-courses .container .course .bg-1 {
