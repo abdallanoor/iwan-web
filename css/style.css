@@ -713,6 +713,7 @@ header .container {
 .packageprice {
   padding-top: 40px;
   padding-bottom: 40px;
+  background-color: #f4f6f7;
 }
 .tagLine {
   text-align: center;
