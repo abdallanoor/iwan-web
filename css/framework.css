@@ -5,9 +5,6 @@
   --balck-color: #121413;
   --grey-color: #646464;
 }
-.c-pointer {
-  cursor: pointer;
-}
 /* -------------------------------- Start Box ------------------------------- */
 .d-flex {
   display: flex;
@@ -21,7 +18,6 @@
 .align-center {
   align-items: center;
 }
-
 .flex-wrab {
   flex-wrap: wrap;
 }
@@ -42,7 +38,7 @@
     display: none;
   }
 }
-.hide{
+.hide {
   display: none;
 }
 /* --------------------------------- End Box -------------------------------- */
@@ -66,16 +62,27 @@
   letter-spacing: 5px;
   background-color: var(--main-color);
   transition: var(--main-transition);
-  padding:  15px 25px;
+  padding: 15px 25px;
   color: #fff;
   fill: var(--main-color);
   cursor: pointer;
   border: 1px solid var(--main-color);
-  border-radius: 1px;
+  border-radius: 2px;
+  transform-style: preserve-3d;
+
 }
 .btn-shap:hover {
   background-color: white;
   color: var(--main-color);
   fill: white;
+}
+.change-btn {
+  margin-right: 10px;
+  background-color: white;
+  color: var(--main-color);
+}
+.change-btn:hover {
+  background-color: var(--main-color);
+  color: white;
 }
 /* ---------------------------- End Components ---------------------------- */
