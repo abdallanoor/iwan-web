@@ -338,7 +338,12 @@ header .container {
   width: 80%;
   padding-top: 47px;
 }
-.our-courses .container .course .bg-1{
+@media (max-width: 767px) {
+  .our-courses .container .course img {
+    width: 90%;
+  }
+}
+.our-courses .container .course .bg-1 {
   padding-top: 30px;
 }
 @media (max-width: 767px) {
