@@ -1,225 +1,1182 @@
-<!DOCTYPE html>
-<html lang="en">
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700&display=swap");
+/* --------------------------- Start global Rules --------------------------- */
+:root {
+  --main-color: #0d6fad;
+  --main-alt-color: #064475;
+  --section-background: rgba(13, 111, 173, 20%);
+  --second-color: #778fa4;
+  --balck-color: #121413;
+  --grey-color: #646464;
+  --main-transition: 0.3s;
+}
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <!-- Boot Strap -->
-  <!-- <link rel="stylesheet" href="css/bootstrap.min.css" /> -->
-  <!-- FONT AWESOME FILE -->
-  <link rel="stylesheet" href="css/all.min.css" />
-  <!-- FRAMEWORK CSS FILE -->
-  <link rel="stylesheet" href="css/framework.css" />
-  <!-- Link Swiper's CSS -->
-  <link rel="stylesheet" href="css/swiper-bundle.min.css"/>
-  <!-- MAIN CSS FILE -->
-  <link rel="stylesheet" href="css/style.css" />
-  <!-- Favicon -->
-  <link rel="shortcut icon" href="images/iwanfav.jpg" type="image/png" />
-  <title>Iwan Academy</title>
-</head>
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 
-<body>
-  <!-- Start Header -->
-  <header>
-    <div class="container flex-between">
-      <img class="logo" src="images/logo2-removebg-preview.png" alt="">
-      <nav class="nav-bar">
-        <ul class="nav-links">
-          <li><a class="active-page" href="index.html">HOME</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-          <li><a href="courses.html">COURSES</a></li>
-          <li><a href="packages.html">PRICING</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </nav>
-      <div class="bar">
-        <i onclick="changeIcon(this)" class="fa-solid fa-bars"></i>
-      </div>
-      <a class="hide-mobile btn-shap" href="packages.html">BOOK NOW</a>
-    </div>
-  </header>
-  <!-- End Header -->
-  <!-- Start Landing -->
-  <div class="landing">
-    <div class="container">
-      <div class="text">
-        <h1>Welcome to iwan iwan</h1>
-        <p>We are a leading Online Quran, Arabic, and Islamic Studies teaching institute. We are experts in using state of the art technology to teach online. We have Al-Azhar certified teachers who are fluent in English and well trained to teach online.</p>
-        <div class="btns">
-          <a class="change-btn btn-shap" href="courses.html">Our Courses</a>
-          <a class="btn-shap" href="contact.html">contact us</a>
-        </div>
-      </div>
-      <!-- <div class="image">
-            <img src="images/illustration-2.png" alt="">
-        </div> -->
-    </div>
-  </div>
-  <!-- End Landing -->
-  <!-- Start Courses -->
-  <div class="our-courses">
-    <div class="container">
-      <h1>Our Courses</h1>
-      <p>Lorem ipsum dolor sit ipsum dolor sit. perferendis dolore nisi labore? Nisi, eum.</p>
-      <div class="courses">
-        <div class="course">
-          <img class="bg-1" src="images/course1.png" alt="">
-          <div class="course-content">
-            <h3>Islamic Studies</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error, repellat totam labore itaque nihil.</p>
-          </div>
-            <a class="btn-shap change-btn" href="courses.html">More</a>
-        </div>
-        <div class="course">
-          <img class="bg-2" src="images/course2.png" alt="">
-          <div class="course-content">
-            <h3>Arabic Studies</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error, repellat totam labore itaque nihil.</p>
-          </div>
-            <a class="btn-shap change-btn" href="courses.html">More</a>
-        </div>
-        <div class="course">
-          <img class="bg-3" src="images/course3.png" alt="">
-          <div class="course-content">
-            <h3>Quran</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit error, repellat totam labore itaque nihil.</p>
-          </div>
-            <a class="btn-shap change-btn" href="courses.html">More</a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Courses -->
-  <!-- Srart Testimonials -->
-  <div class="testi-bg">
-    <div class="container">
-        <div class="main-testi">
-          <h1>Student Testimonials</h1>
-        <div class=" testimonials swiper mySwiper">
-          <div class="testi-content  swiper-wrapper ">
-            <div class="slide swiper-slide">
-              <div class="testi-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi optio, nobis ea qui, ab numquam necessitatibus nulla ad obcaecati ullam assumenda. Vel repudiandae repellat repellendus assumenda alias quos iusto iste minus. Vero sit dolorem commodi porro obcaecati aut eos.</div>
-              <div class="testi-foot">
-                <span class="testi-name">Abdallah Noor</span>
-                <span class="testi-title">Current Student, March 2023</span>
-              </div>
-               </div>
-            <div class="slide swiper-slide  ">
-              <div class="testi-text">Tempora modi optio, nobis ea qui, ab numquam necessitatibus nulla ad obcaecati ullam assumenda. Vel repudiandae repellat repellendus assumenda alias quos iusto iste minus. Vero sit dolorem commodi porro obcaecati aut eos.</div>
-              <div class="testi-foot">
-                <span class="testi-name">Omar Ahmed</span>
-                <span class="testi-title">Current Student, March 2023</span>
-              </div>
-            </div>
-            <div class="slide swiper-slide">
-              <div class="testi-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi optio, nobis ea qui, ab numquam necessitatibus nulla ad obcaecati ullam assumenda alias quos iusto iste minus.</div>
-              <div class="testi-foot">
-                <span class="testi-name">Abdelrahman Emad</span>
-                <span class="testi-title">Current Student, March 2023</span>
-              </div>
-            </div>
-            <div class="slide swiper-slide">
-              <div class="testi-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi optio, nobis ea qui, ab numquam necessitatibus nulla ad obcaecati ullam assumenda alias quos iusto iste minus.</div>
-              <div class="testi-foot">
-                <span class="testi-name">Abdallah</span>
-                <span class="testi-title">Current Student, March 2023</span>
-              </div>
-            </div>
-            <div class="slide swiper-slide">
-              <div class="testi-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora modi optio, nobis ea qui, ab numquam necessitatibus nulla ad obcaecati ullam assumenda alias quos iusto iste minus.</div>
-              <div class="testi-foot">
-                <span class="testi-name">Salah Amin</span>
-                <span class="testi-title">Current Student, March 2023</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-font swiper-button-next"></div>
-        <div class="swiper-font swiper-button-prev"></div>
-        <div class="swiper-pagination"></div>
-      </div>
-    </div>
-  </div>
-  <!-- End Testimonials -->
-  <!-- Start FAQS -->
-  <div class="faqs">
-    <h1>FAQS</h1>
-    <div class="container " id="accordionFlushExample">
-      <button class="accordion ">What does Iwan mean?</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit laboris nisi ut aliquip ex ea commodo consequat
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis magni dolorem qui, exercitationem quibusdam.
-        </p>
-      </div>
+body {
+  font-family: "Montserrat", sans-serif;
+}
 
-      <button class="accordion">Can I study with Iwan as a beginner?</button>
-      <div class="panel">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit laboris nisi ut aliquip ex ea commodo consequat.</p>
-      </div>
+*:focus {
+  outline: none;
+}
+h1 {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+p {
+  line-height: 1.5;
+}
+@media (max-width: 767px) {
+  h1 {
+    font-size: 23px;
+  }
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+}
+.container {
+  /* for phone */
+  padding-left: 20px;
+  padding-right: 20px;
+  /* for phone */
+  margin-left: auto;
+  margin-right: auto;
+}
 
-      <button class="accordion">Does Shaykh teach women?</button>
-      <div class="panel">
-        <p>Yes. Please contact for more details. </p>
-      </div>
-    </div>
-  </div>
-  <!-- End FAQS -->
-  <!-- bookfree -->
-  <div class="free-bg bookfree">
-    <div class="container">
-      <p>Book your free 15 minute consultation with us today</p>
-      <a class="btn-shap" href="packages.html">BOOK NOW</a>
-    </div>
-  </div>
-  <!-- bookfree -->
-  <!-- Start Footer -->
-  <div class="footer">
-    <div class="container">
-      <div class="box">
-        <img src="images/logo2.jpg" alt="">
-      </div>
-      <div class="box">
-        <h4>about us</h3>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque eos quos maiores quaerat,
-            ratione velit beatae inciduntsunt.</p>
-      </div>
-      <div class="box">
-        <h4>iwan academy</h3>
-          <ul class="links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="packages.html">Packages</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-      </div>
-      <div class="box">
-        <h4>Get in touch</h4>
-        <div class="line">
-          <i class="fa-solid fa-envelope"></i>
-          <a class="info" href="#">admin@iwanacademy.com</a>
-        </div>
-        <div class="line">
-          <i class="fa-brands fa-square-facebook"></i>
-          <a class="info" href="#">Iwan Academy</a>
-        </div>
-        <div class="line">
-          <i class="fa-brands fa-square-whatsapp"></i>
-          <div class="info">
-            <a class="info" href="#">+20123456789</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <p class="container copyright">Copyright © 2023. Iwan Academy. All Rights Reserved.</p>
-  </div>
-  <!-- End Footer -->
-  <!-- <script src="js/bootstrap.bundle.js"></script> -->
-  <!-- Swiper JS File -->
-  <script src="js/swiper-bundle.min.js"></script>
-  <!-- Main JS File -->
-  <script src="js/main.js"></script>
-</body>
+/* small screen */
 
-</html>
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+
+/* medium screen */
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+/* large screen */
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+/* ------------------------------- Start Pages Head ------------------------------ */
+.head {
+  background-image: url(../images/bg2.png);
+  background-position: center center;
+  background-size: 100px auto;
+  opacity: 0.9;
+  background-color: #064475;
+  padding: 10px;
+}
+.head .container {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .head .container {
+    padding: 20px;
+    text-align: center;
+  }
+}
+.head .container h2 {
+  font-size: 50px;
+  color: white;
+  font-weight: 500;
+}
+/* ------------------------------- End Pages Head ------------------------------ */
+/* ----------------------------- Stat Book Free ----------------------------- */
+.bookfree {
+  padding: 40px 0 40px 0;
+  background-color: var(--section-background);
+}
+@media (max-width: 767px) {
+  .bookfree {
+    text-align: center;
+  }
+}
+.bookfree .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .bookfree .container {
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+}
+.bookfree p {
+  color: #0d6fad;
+  font-size: 30px;
+  font-weight: 500;
+  flex: 1;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .bookfree p {
+    font-size: 25px;
+    /* padding-bottom: 20px; */
+    margin: 10px;
+  }
+  .bookfree a {
+    margin: 10px;
+  }
+}
+.free-bg {
+  background-color: white;
+}
+/* ----------------------------- End Book Free ----------------------------- */
+/* ---------------------------- End global Rules ---------------------------- */
+/* ------------------------------ Start navigation ------------------------------ */
+/* header {
+  box-shadow: 0 1px 20px rgba(1 1 1/ 10%);
+} */
+header .container {
+  position: relative;
+  padding: 5px 15px;
+}
+.logo {
+  width: 125px;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0 15px;
+  /* line-height: 1.5; */
+}
+.nav-links li a {
+  transition: all var(--main-transition) ease 0s;
+  color: var(--balck-color);
+  font-weight: 500;
+  letter-spacing: 1.6px;
+}
+.nav-links li a:hover,
+.nav-links li a.active-page {
+  color: var(--main-color);
+}
+.bar {
+  display: none;
+  cursor: pointer;
+}
+.bar i {
+  font-size: 22px;
+  transition: all 0.3s;
+  color: var(--main-color);
+}
+@media (max-width: 767px) {
+  header {
+    box-shadow: none;
+  }
+  .bar {
+    display: block;
+  }
+  .nav-bar {
+    position: absolute;
+    height: 0;
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: #ffffff;
+    color: #121413;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    z-index: 999;
+  }
+  .nav-bar.show {
+    height: 206px;
+    padding: 5px;
+    box-shadow: 0px 10px 15px -4px rgb(1 1 1 / 15%);
+  }
+  .nav-bar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    font-weight: bold;
+  }
+  .nav-bar.show ul {
+    opacity: 1;
+  }
+  .nav-bar ul li {
+    padding: 10px 0;
+  }
+}
+/* ------------------------------ End navigation ------------------------------ */
+/* ------------------------------- Start Home ------------------------------- */
+/* ------------------------------ Start Landig ------------------------------ */
+.landing {
+  background-image: url(../images/bg.png);
+  background-size: 100px auto;
+  background-color: #f7fdff;
+}
+
+.landing .container {
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 70px;
+}
+@media (max-width: 991px) {
+  .landing .text {
+    text-align: center;
+  }
+}
+.landing .text {
+  text-align: center;
+}
+.landing .text h1 {
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--main-color);
+}
+@media (max-width: 767px) {
+  .landing .text h1 {
+    font-size: 27px;
+  }
+}
+.landing .text p {
+  font-size: 23px;
+  color: var(--main-color);
+  line-height: 1.5;
+  margin: 20px auto;
+}
+
+@media (max-width: 991px) {
+  .landing .text p {
+    margin: 20px auto;
+  }
+}
+@media (max-width: 767px) {
+  .landing .text p {
+    font-size: 18px;
+  }
+}
+.landing .btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 767px) {
+  .landing .btns {
+    flex-direction: column;
+  }
+  .landing .btns a {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .landing .change-btn {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+}
+
+/* ------------------------------ End Landig ------------------------------ */
+/* ------------------------------ Start Courses ----------------------------- */
+.our-courses {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #f4f6f7;
+}
+.our-courses .container {
+  text-align: center;
+}
+.our-courses .container > p {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #444444;
+}
+
+.our-courses .container .courses {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
+  align-items: start;
+  grid-gap: 30px;
+  text-align: center;
+  margin-top: 40px;
+}
+@media (max-width: 991px) {
+  .our-courses .container .courses {
+    gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+}
+.our-courses .container .course {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+  border-radius: 6px;
+  background-color: #f4f6f7;
+  transition: all var(--main-transition);
+}
+.our-courses .container .course:hover {
+  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+}
+.our-courses .container .course img {
+  width: 80%;
+  padding-top: 47px;
+}
+.our-courses .container .course .bg-1{
+  padding-top: 30px;
+}
+@media (max-width: 767px) {
+  .our-courses .container .course img {
+    padding-top: 30px;
+  }
+}
+.our-courses .container .course a {
+  display: block;
+  width: fit-content;
+  margin: 0 auto 30px;
+}
+
+/* ------------------------------ End Courses ----------------------------- */
+/* --------------------------- Srart Testimonials --------------------------- */
+.testi-bg {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-image: url(../images/bg3.png);
+  background-color: #ffffff;
+  background-size: 250px auto;
+}
+@media (max-width: 767px) {
+  .testi-bg .container {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+}
+.main-testi {
+  position: relative;
+  width: 100%;
+  margin: auto;
+}
+.testimonials {
+  width: 90%;
+  margin: auto;
+}
+.testimonials .slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: auto;
+  margin-bottom: 40px;
+  padding: 20px;
+}
+/* @media (max-width: 767px){
+    .testimonials .slide{
+      padding: 20px;
+    }
+} */
+.testi-text {
+  color: #444444;
+  font-size: 20px;
+  line-height: 1.5;
+  font-style: italic;
+}
+.testi-foot {
+  margin-top: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.testi-name {
+  color: #7a7a7a;
+  font-weight: 600;
+}
+.testi-title {
+  font-weight: 400;
+  color: var(--main-color);
+}
+.padding {
+  padding-bottom: 30px;
+}
+.swiper-font::after,
+.swiper-font::before {
+  font-size: 15px;
+  color: var(--main-color);
+  padding-bottom: 50px;
+  font-weight: bold;
+}
+.swiper-pagination-bullet {
+  width: 7px;
+  height: 7px;
+}
+.swiper-pagination-bullet-active {
+  width: 7px;
+  height: 7px;
+  background-color: #444444;
+}
+/* --------------------------- End Testimonials --------------------------- */
+/* ------------------------------- Start FAQS ------------------------------- */
+.faqs {
+  background-color: var(--section-background);
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.faqs h1 {
+  padding-bottom: 30px;
+}
+.accordion {
+  background-color: #b7d3e5;
+  margin-top: 5px;
+  color: var(--main-color);
+  cursor: pointer;
+  padding: 15px 20px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.4s;
+  text-align: left;
+  outline: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+@media (max-width: 767px) {
+  .accordion {
+    font-size: 15px;
+    padding: 12px 15px;
+    line-height: 1.5;
+  }
+}
+.accordion::before {
+  content: "\002B";
+  color: var(--main-color);
+  font-weight: bold;
+  margin-right: 7px;
+  font-size: 16px;
+}
+.active::before {
+  content: "\2212";
+}
+.panel {
+  padding: 0 18px;
+  background-color: transparent;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s;
+  border: solid 1.5px #b7d3e5;
+  border-top: 0;
+}
+.panel p {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  line-height: 1.5;
+  color: var(--main-color);
+  font-weight: 400;
+}
+@media (max-width: 767px) {
+  .panel p {
+    font-size: 16px;
+  }
+}
+/* ------------------------------- End FAQS ------------------------------- */
+
+/* ------------------------------- End Home ------------------------------- */
+/* ------------------------------ Start About ------------------------------ */
+.about .about-mission {
+  padding: 40px 0px 25px 0px;
+}
+@media (max-width: 767px) {
+  .about .about-mission {
+    padding: 40px 20px 25px 20px;
+  }
+}
+.about .about-mission .title {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  font-size: 30px;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .about .about-mission .title {
+    font-size: 23px;
+  }
+}
+.about .about-mission .word {
+  text-align: center;
+  color: var(--main-color);
+  font-size: 25px;
+  font-weight: 400;
+  padding-bottom: 20px;
+  line-height: 1.6;
+}
+@media (max-width: 767px) {
+  .about .about-mission .word {
+    font-size: 22px;
+  }
+}
+.about .about-mission .discription {
+  padding-bottom: 20px;
+}
+.about .about-mission .discription p {
+  margin-top: 0;
+  margin-bottom: 15px;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #666666;
+  text-align: center;
+}
+@media (max-width: 1200px) {
+  .about .about-mission .discription p {
+    margin-top: 15px;
+  }
+}
+/* ---------------------------- */
+.about .quran {
+  max-width: 100%;
+  height: auto;
+  padding: 20px;
+  filter: hue-rotate(43deg);
+}
+/* ---------------------------- */
+.teacher {
+  padding: 50px 0 50px 0;
+}
+@media (max-width: 1200px) {
+  .teacher {
+    padding: 50px 20px 75px 20px;
+    flex-direction: column;
+    text-align: center;
+  }
+}
+.teacher .teacher-des {
+  flex-basis: 50%;
+}
+@media (max-width: 1200px) {
+  .teacher .teacher-des {
+    flex-basis: 100%;
+    margin-bottom: 20px;
+  }
+}
+.teacher .teacher-des .teacher-title {
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 500;
+  padding-bottom: 10px;
+}
+@media (max-width: 1200px) {
+  .teacher .teacher-des .teacher-title {
+    margin: 20px 0 15px 0;
+    font-size: 25px;
+  }
+}
+.teacher .teacher-des .teacher-about {
+  color: var(--main-color);
+  font-weight: 500;
+  line-height: 1.5;
+  font-size: 20px;
+  padding-bottom: 20px;
+}
+@media (max-width: 1200px) {
+  .teacher .teacher-des .teacher-about {
+    margin: 18px 0 15px 0;
+  }
+}
+@media (max-width: 767px) {
+  .teacher .teacher-des .teacher-title {
+    font-size: 20px;
+  }
+  .teacher .teacher-des .teacher-about {
+    font-size: 18px;
+  }
+}
+.teacher .teacher-des .info {
+  padding-bottom: 20px;
+}
+.teacher .teacher-des .info p {
+  color: #666666;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+@media (max-width: 1200px) {
+  .teacher .teacher-des .info p {
+    margin-top: 15px;
+  }
+}
+.teacher .teacher-ph {
+  flex-basis: 50%;
+  padding: 10px;
+}
+.teacher img {
+  width: 80%;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .teacher img {
+    width: 100%;
+  }
+}
+/* ------------------------------ End About ------------------------------ */
+/* ------------------------------ Start Courses Page ----------------------------- */
+.courses-page {
+  background-color: #f4f6f7;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+}
+.courses-page .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 30px;
+  gap: 20px;
+}
+@media (max-width: 767px) {
+  .courses-page .container {
+    grid-template-columns: minmax(300px, 1fr);
+    gap: 0;
+  }
+}
+.course-info {
+  margin-bottom: 30px;
+}
+.cour-des #accordionFlushExample {
+  padding: 10px;
+}
+.cour-des .accordion {
+  background-color: #dae6ee;
+}
+.course-info .cour-des .cour-title {
+  color: var(--main-color);
+  font-size: 30px;
+  font-weight: 500;
+  border-width: 80%;
+  width: fit-content;
+  margin: 30px auto 30px;
+}
+.cour-des .panel {
+  border: solid 1.5px #dae6ee;
+}
+
+.cour-des .panel p {
+  text-align: left;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.cour-des .panel p:first-child {
+  padding-top: 15px;
+}
+.cour-des .panel p:last-child {
+  padding-bottom: 15px;
+}
+.course-info .cour-des a {
+  margin: 30px auto 0;
+  display: block;
+  width: fit-content;
+}
+/* ------------------------------ End Courses Page ----------------------------- */
+/* ------------------------------ Start Pricing ----------------------------- */
+.packageprice {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #f4f6f7;
+}
+.tagLine {
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.82);
+}
+
+.tabGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+/* ---------------------------- */
+.uk-margin {
+  margin-top: 20px !important;
+  margin-bottom: 20px;
+}
+/* ---------------------------- */
+.tabs {
+  display: flex;
+  align-items: center;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+.tabs li {
+  margin: 0 -1px;
+  cursor: pointer;
+}
+.tabs li p {
+  background: white;
+  font-size: 20px;
+  padding: 8px 30px;
+  border-radius: 0;
+  text-transform: capitalize;
+  font-weight: 600;
+  border: 1px solid #064475;
+  color: rgba(0, 0, 0, 0.82);
+}
+.tabs li p:hover {
+  color: #064475;
+}
+.tabs li.uk-active p {
+  background: #064475;
+  font-size: 25px;
+  padding: 8px 30px;
+  border-radius: 0;
+  text-transform: capitalize;
+  font-weight: 600;
+  border: 1px solid #064475;
+  box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.3686274509803922);
+  color: white;
+}
+.tabs li span {
+  font-size: 10px;
+}
+.uk-switcher {
+  width: 100%;
+}
+.price-content {
+  display: none;
+}
+.price-content.uk-active {
+  display: block;
+  animation: fade 1s ease;
+}
+/* ---------------------------- */
+.plans30 ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.plans30 ul li {
+  margin: 0 15px;
+  transition: 0.2s all;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+.plans30 ul li:hover {
+  transform: scale(1.05);
+  opacity: 1;
+  cursor: pointer;
+}
+.planCard {
+  background: #ececec;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 5px;
+  border-bottom: 1px solid #064475;
+  transition: 0.2s all;
+}
+.planwk {
+  background: #ffffff;
+  color: rgba(0, 0, 0, 0.68);
+  padding: 5px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  width: 100%;
+}
+.planwk p {
+  margin: 0;
+  text-align: center;
+}
+
+.planwk p span {
+  font-weight: 600;
+  padding-bottom: 2px;
+  color: #064475;
+  letter-spacing: 0;
+  font-size: 20px;
+}
+.plprice {
+  padding: 15px 10px;
+  width: 100%;
+  background: #064475;
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.3215686274509804);
+}
+.plprice h2 {
+  font-size: 20px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0;
+  padding: 0;
+  line-height: 110%;
+  text-align: center;
+  font-weight: 400;
+}
+.plprice span.num {
+  font-size: 40px;
+  font-weight: 600;
+  color: #ffd67c;
+  text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.51);
+  position: relative;
+  top: 2px;
+}
+.plprice sup {
+  position: relative;
+  top: -7px;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+.plspec {
+  width: 100%;
+  padding: 10px 20px;
+  border-bottom: 1px solid #d3d3d3;
+}
+.plspec p {
+  margin: 0;
+  font-size: 15px;
+  color: #454545;
+}
+.plspec p:not(:last-child) {
+  padding-bottom: 5px;
+}
+.plspec p:nth-child(1)::before {
+  content: "\f274";
+  font-family: "Font Awesome 5 Free";
+}
+.plspec p:nth-child(2)::before {
+  content: "\f328";
+  font-family: "Font Awesome 5 Free";
+}
+.plspec p:nth-child(3)::before {
+  content: "\f017";
+  font-family: "Font Awesome 5 Free";
+}
+.plspec p::before {
+  margin-right: 0;
+  display: inline-block;
+  width: 30px;
+  color: #a0a0a0;
+  text-align: center;
+  margin-left: -7px;
+}
+.plcal {
+  padding: 10px 20px;
+}
+.plcal h6 {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  color: #6d6d6d;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #d3d3d3;
+  padding-bottom: 10px;
+  line-height: 110%;
+  font-weight: 400;
+}
+.plcal span {
+  align-items: center;
+  font-size: 14px;
+  font-weight: 500;
+  color: #064475;
+}
+span.rd {
+  background: #09538c;
+  color: white;
+  padding: 2px;
+  display: flex;
+  width: 40%;
+  font-size: 13px;
+  margin-top: 3px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  font-weight: 500;
+  border-radius: 2px;
+}
+.plcal h6:last-child {
+  border: none;
+  margin-bottom: 0;
+}
+/* ---------------------------- */
+.signup {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.signup::before {
+  content: "";
+  width: 2px;
+  height: 19px;
+  background: #064475;
+  position: absolute;
+  top: 0;
+}
+.signup a {
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 19px;
+  text-decoration: none;
+  padding: 10px 20px;
+  background: transparent;
+  color: #064475;
+  border-radius: 2px;
+  box-shadow: none;
+  border: 1px solid #064475;
+  transition: 0.3s all;
+  fill: #064475;
+}
+.signup a:hover {
+  background: #064475;
+  color: white;
+  fill: #064475;
+  box-shadow: 0 3px 10px rgb(6 68 117 / 30%);
+  transform: scale(1.05);
+}
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+/* ------------------------------ End Pricing ----------------------------- */
+/* ------------------------------ Start Contact ----------------------------- */
+.discount {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 40px;
+  padding-bottom: 70px;
+}
+@media (max-width: 767px) {
+  .discount {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+.discount .image {
+  flex-basis: 50%;
+}
+@media (max-width: 991px) {
+  .discount .image {
+    margin-bottom: 30px;
+    flex-basis: 100%;
+  }
+}
+.box {
+  padding-bottom: 10px;
+}
+.box .line {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.box .line i {
+  color: var(--main-color);
+  margin-right: 10px;
+  font-size: 30px;
+}
+.box .line .info {
+  line-height: 1.7;
+}
+.box .line a {
+  color: var(--grey-color);
+  font-size: 18px;
+}
+.box .line a:hover {
+  color: #313131;
+}
+
+.discount .form {
+  flex-basis: 50%;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+@media (max-width: 991px) {
+  .discount .form {
+    flex-basis: 100%;
+  }
+}
+.discount .form .input {
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: solid 1px #ccc;
+  margin-bottom: 25px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  caret-color: var(--main-color);
+}
+.discount .form .input:focus {
+  outline: none;
+}
+.discount .form textarea {
+  resize: none;
+  height: 120px;
+}
+@media (max-width: 991px) {
+  .discount .form .submit {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+.discount h2 {
+  color: var(--main-color);
+  padding-bottom: 20px;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 36px;
+  max-width: 90%;
+}
+/* ------------------------------ End Contact ----------------------------- */
+/* ------------------------------ Start Footer ------------------------------ */
+.footer {
+  background-color: var(--balck-color);
+  padding: 70px 0 0;
+}
+@media (max-width: 767px) {
+  .footer {
+    padding: 70px 20px 0 20px;
+  }
+}
+.footer .container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.footer .container .box {
+  width: 250px;
+}
+@media (max-width: 1200px) {
+  .footer .container .box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 686px) {
+  .footer .container .box {
+    width: 95%;
+  }
+}
+
+@media (max-width: 586px) {
+  .footer .container .box {
+    width: 100%;
+  }
+}
+.footer .container .box img {
+  width: 93%;
+  display: block;
+  margin: auto;
+}
+@media (max-width: 767px) {
+  .footer .container .box img {
+    width: 100%;
+  }
+}
+.footer .container .box h4 {
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 1.6px;
+  color: white;
+  padding: 0 0 20px;
+}
+.footer .box .text {
+  line-height: 1.5;
+  color: #b9b9b9;
+}
+.footer .box .links li:not(:last-child) {
+  margin-bottom: 15px;
+}
+@media (max-width: 767px) {
+  .footer .box .links li {
+    padding: 10px 0;
+  }
+}
+.footer .box .links li:not(:last-child) {
+  border-bottom: 1px solid #444;
+  border: none;
+}
+@media (max-width: 767px) {
+  .footer .box .links li:not(:last-child) {
+    border: none;
+  }
+}
+.footer .box .links li a {
+  color: #b9b9b9;
+  transition: var(--main-transition);
+}
+.footer .box .links li a:hover {
+  color: white;
+  padding-left: 10px;
+}
+.footer .box .links li a::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\F101";
+  font-weight: 900;
+  margin-right: 10px;
+  color: var(--main-color);
+}
+.footer .box .line {
+  display: flex;
+  align-items: center;
+  color: #b9b9b9;
+}
+.footer .box .line i {
+  color: var(--main-color);
+  margin-right: 10px;
+  font-size: 25px;
+}
+.footer .box .line a {
+  color: #b9b9b9;
+  font-size: 16px;
+  font-weight: 400;
+}
+.footer .box .line a:hover {
+  color: white;
+}
+.footer .copyright {
+  padding: 20px 0;
+  color: #b9b9b9;
+  text-align: center;
+  margin: 30px auto 0 auto;
+  border-top: 1px solid #444;
+  font-size: 13px;
+}
+/* ------------------------------ End Footer ------------------------------ */
