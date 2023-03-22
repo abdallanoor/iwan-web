@@ -3,7 +3,8 @@
 :root {
   --main-color: #0d6fad;
   --main-alt-color: #064475;
-  --section-background: rgba(13, 111, 173, 20%);
+  --section-background: #0d6fad33;
+  /* --section-background: #BAD1E2; */
   --second-color: #778fa4;
   --balck-color: #121413;
   --grey-color: #646464;
@@ -296,6 +297,115 @@ header .container {
 }
 
 /* ------------------------------ End Landig ------------------------------ */
+/* ----------------------------- Start How Works ----------------------------- */
+.how-works {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  text-align: center;
+  /* background-color: #f4f5f7; */
+}
+.how-works h1{
+  margin-bottom: 20px;
+
+}
+.how-works .how-des{
+  margin-bottom: 20px;
+  font-size: 18px;
+  font-weight: 400;
+  display: none;
+}
+.how-works .steps {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+.how-works .steps .step {
+  width: 30%;
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  .how-works .steps .step {
+    width: 100%;
+  }
+}
+.how-works .steps .step img {
+  width: 100px;
+  margin-bottom: 10px;
+}
+@media (max-width: 767px) {
+  .how-works .steps .step img {
+    width: 120px;
+  }
+}
+.how-works .steps .step h4 {
+  font-size: 47px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+.how-works .steps .step h3 {
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 20px;
+  margin-bottom: 15px;
+}
+.how-works .steps .step p {
+  font-weight: 300;
+}
+.how-works .simple {
+  font-size: 19px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+.how-works a {
+  display: block;
+  width: fit-content;
+  margin: auto;
+}
+/* ----------------------------- End How Works ----------------------------- */
+/* ----------------------------- Start Why iwan ----------------------------- */
+.why-iwan {
+  padding-top: 75px;
+  padding-bottom: 75px;
+  background-color: #f4f5f7;
+  text-align: center;
+}
+.why-iwan h1 {
+  margin-bottom: 20px;
+  color: var(--main-alt-color);
+}
+.why-iwan .features {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.why-iwan .features .box {
+  width: 30%;
+  padding: 20px;
+}
+@media (max-width: 767px) {
+  .why-iwan .features .box {
+    width: 100%;
+  }
+}
+.why-iwan .features .box h3 {
+  color: var(--main-alt-color);
+  padding-top: 12px;
+  padding-bottom: 5px;
+  font-size: 22px;
+  font-weight: 600;
+}
+.why-iwan .features .box p {
+  color: var(--main-alt-color);
+  font-weight: 500;
+}
+.why-iwan .box img {
+  width: 80px;
+  height: 80px;
+}
+/* ----------------------------- End Why iwan ----------------------------- */
 /* ------------------------------ Start Courses ----------------------------- */
 .our-courses {
   padding-top: 75px;
@@ -308,7 +418,6 @@ header .container {
 .our-courses .container > p {
   margin-top: 20px;
   font-size: 20px;
-  color: #444444;
 }
 
 .our-courses .container .courses {
@@ -328,7 +437,7 @@ header .container {
 .our-courses .container .course {
   box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
   border-radius: 6px;
-  /* background-color: #f4f6f7; */
+  /* background-color: #f4f5f7; */
   transition: all var(--main-transition);
 }
 .our-courses .container .course:hover {
@@ -999,7 +1108,7 @@ span.rd {
     flex-basis: 100%;
   }
 }
-.box {
+.discount .box {
   padding-bottom: 10px;
 }
 .box .line {
