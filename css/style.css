@@ -368,7 +368,7 @@ header .container {
 .why-iwan {
   padding-top: 75px;
   padding-bottom: 75px;
-  background-color: #f4f5f7;
+  /* background-color: #f4f5f7; */
   text-align: center;
 }
 .why-iwan h1 {
@@ -765,7 +765,7 @@ header .container {
   text-align: center;
 }
 .courses-page .container > p {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 400;
 }
 /* .courses-page .container {
