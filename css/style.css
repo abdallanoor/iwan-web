@@ -302,13 +302,12 @@ header .container {
   padding-top: 75px;
   padding-bottom: 75px;
   text-align: center;
-  /* background-color: #f4f5f7; */
+  background-color: #f4f5f7;
 }
-.how-works h1{
+.how-works h1 {
   margin-bottom: 20px;
-
 }
-.how-works .how-des{
+.how-works .how-des {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 400;
@@ -374,7 +373,6 @@ header .container {
 }
 .why-iwan h1 {
   margin-bottom: 20px;
-  color: var(--main-alt-color);
 }
 .why-iwan .features {
   display: flex;
@@ -391,15 +389,13 @@ header .container {
   }
 }
 .why-iwan .features .box h3 {
-  color: var(--main-alt-color);
   padding-top: 12px;
   padding-bottom: 5px;
-  font-size: 22px;
-  font-weight: 600;
+  font-size: 24px;
+  font-weight: 500;
 }
 .why-iwan .features .box p {
-  color: var(--main-alt-color);
-  font-weight: 500;
+  font-weight: 400;
 }
 .why-iwan .box img {
   width: 80px;
@@ -471,11 +467,18 @@ header .container {
 .testi-bg {
   padding-top: 75px;
   padding-bottom: 75px;
-  background-image: url(../images/bg3.png);
-  background-color: #ffffff;
-  background-size: 250px auto;
+  /* background-image: url(../images/bg3.png); */
+  /* background-color: #ffffff; */
+  /* background-size: 250px auto; */
+  background-image: url(../images/testimonials-bg.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (max-width: 767px) {
+  .testi-bg {
+    background-position: 100%;
+  }
   .testi-bg .container {
     padding-left: 0px;
     padding-right: 0px;
@@ -558,7 +561,7 @@ header .container {
   padding-bottom: 30px;
 }
 .accordion {
-  background-color: #b7d3e5;
+  background-color: transparent;
   margin-top: 5px;
   color: var(--main-color);
   cursor: pointer;
@@ -596,7 +599,7 @@ header .container {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.4s;
-  border: solid 1.5px #b7d3e5;
+  border: solid 1.5px transparent;
   border-top: 0;
 }
 .panel p {
@@ -761,7 +764,11 @@ header .container {
   padding-bottom: 50px;
   text-align: center;
 }
-.courses-page .container {
+.courses-page .container > p {
+  font-size: 20px;
+  font-weight: 400;
+}
+/* .courses-page .container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   grid-gap: 30px;
@@ -772,7 +779,7 @@ header .container {
     grid-template-columns: minmax(300px, 1fr);
     gap: 0;
   }
-}
+} */
 .course-info {
   margin-bottom: 30px;
 }
@@ -782,7 +789,36 @@ header .container {
 .cour-des .accordion {
   background-color: #dae6ee;
 }
-.course-info .cour-des .cour-title {
+.courses-page .cour-des {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media (max-width: 767px) {
+  .courses-page .cour-des {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+.courses-page .cour-des.reverse {
+  flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  .courses-page .cour-des.reverse {
+    flex-direction: column;
+  }
+}
+.courses-page .cour-des img {
+  width: 40%;
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  .courses-page .cour-des img {
+    width: 90%;
+    padding: 0px;
+  }
+}
+.course-info .cour-title {
   color: var(--main-color);
   font-size: 30px;
   font-weight: 500;
