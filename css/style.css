@@ -321,7 +321,7 @@ header .container {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 400;
-  display: none;
+  /* display: none; */
 }
 .how-works .steps {
   display: flex;
@@ -437,13 +437,7 @@ header .container {
   margin-bottom: 30px;
   padding: 30px 10px;
   border-radius: 6px;
-  box-shadow: none;
   box-shadow: 0 0px 15px rgb(0 0 0 / 7%);
-}
-@media (max-width: 767px){
-  .course-info{
-    padding: 30px 10px;
-  }
 }
 .courses-page .cour-des {
   display: flex;
@@ -502,9 +496,6 @@ header .container {
 .testi-bg {
   padding-top: 75px;
   padding-bottom: 75px;
-  /* background-image: url(../images/bg3.png); */
-  /* background-color: #ffffff; */
-  /* background-size: 250px auto; */
   background-image: url(../images/testimonials-bg.jpg);
   background-position: center center;
   background-repeat: no-repeat;
@@ -538,11 +529,7 @@ header .container {
   margin-bottom: 40px;
   padding: 20px;
 }
-/* @media (max-width: 767px){
-    .testimonials .slide{
-      padding: 20px;
-    }
-} */
+
 .testi-text {
   color: #444444;
   font-size: 20px;
@@ -566,14 +553,14 @@ header .container {
   font-weight: 400;
   color: var(--main-color);
 }
-.padding {
-  padding-bottom: 30px;
+.swiper-font{
+  width: 20px;
+  height: 20px;
 }
 .swiper-font::after,
 .swiper-font::before {
   font-size: 15px;
   color: var(--main-color);
-  padding-bottom: 50px;
   font-weight: bold;
 }
 .swiper-pagination-bullet {

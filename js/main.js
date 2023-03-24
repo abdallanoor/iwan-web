@@ -44,6 +44,7 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
+
     }
   };
 }
@@ -103,9 +104,9 @@ tabs.forEach((tab, index) => {
 /* ------------------------------ Pricing page ------------------------------ */
 /* -------------------------------- Swiper JS ------------------------------- */
 var swiper = new Swiper(".mySwiper", {
-  grabCursor:true,
+  grabCursor: true,
   centeredSlides: true,
-   loop: true,
+  loop: true,
   autoplay: {
     delay: 5000,
     disableOnInteraction: false,
