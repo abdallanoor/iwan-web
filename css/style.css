@@ -151,9 +151,6 @@ ul {
 /* ----------------------------- End Book Free ----------------------------- */
 /* ---------------------------- End global Rules ---------------------------- */
 /* ------------------------------ Start navigation ------------------------------ */
-/* header {
-  box-shadow: 0 1px 20px rgba(1 1 1/ 10%);
-} */
 header .container {
   position: relative;
   padding: 5px 15px;
@@ -225,6 +222,9 @@ header .container {
   .nav-bar ul li {
     padding: 10px 0;
   }
+}
+.fa-xmark::before {
+  font-size: 26px;
 }
 /* ------------------------------ End navigation ------------------------------ */
 /* ------------------------------- Start Home ------------------------------- */
@@ -307,6 +307,51 @@ header .container {
 }
 
 /* ------------------------------ End Landig ------------------------------ */
+/* ----------------------------- Start About Us ----------------------------- */
+.about-section {
+  padding-top: 75px;
+  padding-bottom: 75px;
+}
+.about-us {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 767px) {
+  .about-us {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+.about-us .about-image {
+  width: 350px;
+  padding: 20px;
+}
+.about-us .about-des p:nth-child(1) {
+  font-size: 25px;
+  color: var(--main-color);
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+.about-us .about-des p:nth-child(2) {
+  margin-bottom: 20px;
+}
+.about-us .about-des p:nth-child(3) {
+  margin-bottom: 5px;
+  color: var(--main-color);
+  font-size: 20px;
+  font-weight: 500;
+}
+.about-us .about-des p:nth-child(4) {
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+  .about-us .about-des a {
+    margin: auto;
+  }
+}
+/* ----------------------------- End About Us ----------------------------- */
 /* ----------------------------- Start How Works ----------------------------- */
 .how-works {
   padding-top: 75px;
@@ -321,7 +366,6 @@ header .container {
   margin-bottom: 20px;
   font-size: 18px;
   font-weight: 400;
-  /* display: none; */
 }
 .how-works .steps {
   display: flex;
@@ -340,7 +384,7 @@ header .container {
   }
 }
 .how-works .steps .step img {
-  width: 100px;
+  width: 85px;
   margin-bottom: 10px;
 }
 @media (max-width: 767px) {
@@ -515,6 +559,9 @@ header .container {
   width: 100%;
   margin: auto;
 }
+.main-testi h1 {
+  margin-bottom: 0;
+}
 .testimonials {
   width: 90%;
   margin: auto;
@@ -553,7 +600,7 @@ header .container {
   font-weight: 400;
   color: var(--main-color);
 }
-.swiper-font{
+.swiper-font {
   width: 20px;
   height: 20px;
 }
