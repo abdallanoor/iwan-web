@@ -328,6 +328,11 @@ header .container {
   width: 350px;
   padding: 20px;
 }
+@media (max-width: 767px) {
+  .about-us .about-des{
+    padding: 20px;
+  }
+}
 .about-us .about-des p:nth-child(1) {
   font-size: 25px;
   color: var(--main-color);
