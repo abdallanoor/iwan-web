@@ -30,15 +30,17 @@ h1 {
   font-size: 30px;
   font-weight: 500;
   text-transform: uppercase;
-}
-p {
-  line-height: 1.5;
+  margin-bottom: 20px;
 }
 @media (max-width: 767px) {
   h1 {
     font-size: 23px;
   }
 }
+p {
+  line-height: 1.5;
+}
+
 a {
   text-decoration: none;
 }
@@ -249,24 +251,32 @@ header .container {
   text-align: center;
 }
 .landing .text h1 {
-  font-size: 35px;
-  font-weight: 500;
+  font-size: 60px;
+  font-weight: bold;
   text-transform: uppercase;
   color: var(--main-color);
+  margin: 0;
 }
 @media (max-width: 767px) {
   .landing .text h1 {
-    font-size: 27px;
+    font-size: 38px;
   }
 }
-.landing .text p {
+
+.landing .text p:nth-child(1) {
   font-size: 23px;
   color: var(--main-color);
   line-height: 1.5;
-  margin: 20px auto;
+  margin: 0px auto;
+}
+.landing .text > p {
+  font-size: 23px;
+  color: var(--main-color);
+  line-height: 1.5;
+  margin: 0px auto 20px;
 }
 
-@media (max-width: 991px) {
+/* @media (max-width: 991px) {
   .landing .text p {
     margin: 20px auto;
   }
@@ -275,7 +285,7 @@ header .container {
   .landing .text p {
     font-size: 18px;
   }
-}
+} */
 .landing .btns {
   display: flex;
   align-items: center;
@@ -368,7 +378,7 @@ header .container {
 .why-iwan {
   padding-top: 75px;
   padding-bottom: 75px;
-  /* background-color: #f4f5f7; */
+  background-color: #f4f5f7;
   text-align: center;
 }
 .why-iwan h1 {
@@ -403,65 +413,90 @@ header .container {
 }
 /* ----------------------------- End Why iwan ----------------------------- */
 /* ------------------------------ Start Courses ----------------------------- */
-.our-courses {
+.courses-page {
   padding-top: 75px;
   padding-bottom: 75px;
-  /* background-color: #f4f6f7; */
-}
-.our-courses .container {
   text-align: center;
-}
-.our-courses .container > p {
-  margin-top: 20px;
-  font-size: 20px;
 }
 
-.our-courses .container .courses {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(370px, 1fr));
-  align-items: start;
-  grid-gap: 30px;
-  text-align: center;
-  margin-top: 40px;
+.courses-page .container > p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
-@media (max-width: 991px) {
-  .our-courses .container .courses {
-    gap: 20px;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  }
+.course-info .cour-title {
+  color: var(--main-color);
+  font-size: 26px;
+  font-weight: 500;
+  border-width: 80%;
+  width: fit-content;
+  margin: 0px auto 30px;
 }
-.our-courses .container .course {
-  box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+
+.course-info {
+  margin-bottom: 30px;
+  padding: 30px 10px;
   border-radius: 6px;
-  /* background-color: #f4f5f7; */
-  transition: all var(--main-transition);
+  box-shadow: none;
+  box-shadow: 0 0px 15px rgb(0 0 0 / 7%);
 }
-.our-courses .container .course:hover {
-  box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
-}
-.our-courses .container .course img {
-  width: 80%;
-  padding-top: 47px;
-}
-@media (max-width: 767px) {
-  .our-courses .container .course img {
-    width: 95%;
+@media (max-width: 767px){
+  .course-info{
+    padding: 30px 0;
   }
 }
-.our-courses .container .course .bg-1 {
-  padding-top: 30px;
+.courses-page .cour-des {
+  display: flex;
+  align-items: center;
+  gap: 30px;
 }
 @media (max-width: 767px) {
-  .our-courses .container .course img {
-    padding-top: 30px;
+  .courses-page .cour-des {
+    flex-direction: column;
+    gap: 15px;
   }
 }
-.our-courses .container .course a {
+.courses-page .cour-des.reverse {
+  flex-direction: row-reverse;
+}
+@media (max-width: 767px) {
+  .courses-page .cour-des.reverse {
+    flex-direction: column;
+  }
+}
+.courses-page .cour-des img {
+  width: 40%;
+  padding: 30px;
+}
+@media (max-width: 767px) {
+  .courses-page .cour-des img {
+    width: 90%;
+    padding: 0px;
+  }
+}
+
+.cour-des .accordion {
+  background-color: #dae6ee;
+}
+.cour-des .panel {
+  border: solid 1.5px #dae6ee;
+}
+.cour-des .panel p {
+  text-align: left;
+  padding-top: 2px;
+  padding-bottom: 2px;
+}
+.cour-des .panel p:first-child {
+  padding-top: 15px;
+}
+.cour-des .panel p:last-child {
+  padding-bottom: 15px;
+}
+.course-info a {
+  margin: 30px auto 0;
   display: block;
   width: fit-content;
-  margin: 0 auto 30px;
 }
-
 /* ------------------------------ End Courses ----------------------------- */
 /* --------------------------- Srart Testimonials --------------------------- */
 .testi-bg {
@@ -757,96 +792,7 @@ header .container {
   }
 }
 /* ------------------------------ End About ------------------------------ */
-/* ------------------------------ Start Courses Page ----------------------------- */
-.courses-page {
-  background-color: #f4f6f7;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  text-align: center;
-}
-.courses-page .container > p {
-  font-size: 18px;
-  font-weight: 400;
-}
-/* .courses-page .container {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  grid-gap: 30px;
-  gap: 20px;
-}
-@media (max-width: 767px) {
-  .courses-page .container {
-    grid-template-columns: minmax(300px, 1fr);
-    gap: 0;
-  }
-} */
-.course-info {
-  margin-bottom: 30px;
-}
-.cour-des #accordionFlushExample {
-  padding: 10px;
-}
-.cour-des .accordion {
-  background-color: #dae6ee;
-}
-.courses-page .cour-des {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
-@media (max-width: 767px) {
-  .courses-page .cour-des {
-    flex-direction: column;
-    gap: 15px;
-  }
-}
-.courses-page .cour-des.reverse {
-  flex-direction: row-reverse;
-}
-@media (max-width: 767px) {
-  .courses-page .cour-des.reverse {
-    flex-direction: column;
-  }
-}
-.courses-page .cour-des img {
-  width: 40%;
-  padding: 30px;
-}
-@media (max-width: 767px) {
-  .courses-page .cour-des img {
-    width: 90%;
-    padding: 0px;
-  }
-}
-.course-info .cour-title {
-  color: var(--main-color);
-  font-size: 30px;
-  font-weight: 500;
-  border-width: 80%;
-  width: fit-content;
-  margin: 30px auto 30px;
-}
-.cour-des .panel {
-  border: solid 1.5px #dae6ee;
-}
 
-.cour-des .panel p {
-  text-align: left;
-  padding-top: 2px;
-  padding-bottom: 2px;
-}
-.cour-des .panel p:first-child {
-  padding-top: 15px;
-}
-.cour-des .panel p:last-child {
-  padding-bottom: 15px;
-}
-.course-info .cour-des a {
-  margin: 30px auto 0;
-  display: block;
-  width: fit-content;
-}
-/* ------------------------------ End Courses Page ----------------------------- */
 /* ------------------------------ Start Pricing ----------------------------- */
 .packageprice {
   padding-top: 40px;
