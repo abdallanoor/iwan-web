@@ -422,7 +422,7 @@ header .container {
 .courses-page .container > p {
   font-size: 18px;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 .course-info .cour-title {
   color: var(--main-color);
@@ -442,7 +442,7 @@ header .container {
 }
 @media (max-width: 767px){
   .course-info{
-    padding: 30px 0;
+    padding: 30px 10px;
   }
 }
 .courses-page .cour-des {
