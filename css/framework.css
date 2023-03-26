@@ -1,35 +1,4 @@
-:root {
-  --main-color: #0d6fad;
-  --main-alt-color: #489cdc;
-  --second-color: #778fa4;
-  --balck-color: #121413;
-  --grey-color: #646464;
-}
-/* -------------------------------- Start Box ------------------------------- */
-.d-flex {
-  display: flex;
-}
-.space-between {
-  justify-content: space-between;
-}
-.space-around {
-  justify-content: space-around;
-}
-.align-center {
-  align-items: center;
-}
-.flex-wrab {
-  flex-wrap: wrap;
-}
-.d-grid {
-  display: grid;
-}
-.gap-20 {
-  gap: 20px;
-}
-.d-block {
-  display: block;
-}
+
 @media (max-width: 767px) {
   .block-mobile {
     display: block;
@@ -84,5 +53,9 @@
 .change-btn:hover {
   background-color: var(--main-color);
   color: white;
+}
+.block{
+  display: block;
+  width: fit-content;
 }
 /* ---------------------------- End Components ---------------------------- */

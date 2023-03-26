@@ -59,27 +59,27 @@
                     </div>
                     <div class="line">
                     <i class="fa-brands fa-square-facebook"></i>
-                    <a class="info" href="#">Iwan Academy</a>
+                    <a class="info" href="https://www.facebook.com/salah.amin.911">Iwan Academy</a>
                     </div>
                     <div class="line">
                       <i class="fa-brands fa-square-whatsapp"></i>
                     <div class="info">
-                        <a class="info" href="#">+20123456789</a>
+                        <a class="info" href="https://web.whatsapp.com/send?phone=+201063430543&text=">+201063430543</a>
                     </div>
                     </div>
                 </div>
                 <a class=" btn-shap" href="#">free consultation</a>
               </div>
           </div>
-          <div class="form ">
+          <div class="form">
             <h2>Send us a message</h2>
             <div class="content">
-                  <form action="">
-                      <input class="input" type="text" placeholder="Your Name" name="name">
-                      <input class="input" type="email" placeholder="Your Email" name="email">
-                      <input class="input" type="text" placeholder="Your phone" name="mobile">
-                      <textarea class="input" placeholder="Tell Us About Your Needs" name="massage" ></textarea>
-                      <button type="submit" class="btn-shap submit" href="">SEND MESSAGE</button>
+                  <form onsubmit="sendEmail(); reset(); return false;">
+                      <input class="input" id="yourName" type="text" placeholder="Your Name" required>
+                      <input class="input" id="email" type="email" placeholder="Your Email" required>
+                      <input class="input" id="phone" type="text" placeholder="Your phone"  required>
+                      <textarea class="input" id="message" placeholder="Tell Us About Your Needs" name="massage" ></textarea>
+                      <button id="submit" type="submit" class="btn-shap submit">SEND MESSAGE</button>
                   </form>
               </div> 
           </div>
@@ -129,7 +129,30 @@
     </div>
     <!-- End Footer -->
     <!-- End Contact Page -->
-
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="js/main.js"></script>
+    <!-- <script>
+      var yourName = document.getElementById("yourName");
+      var email = document.getElementById("email");
+      var phone = document.getElementById("phone");
+      var message = document.getElementById("message");
+      var body = "Name: " +yourName.value + "<br> Email: " +email.value +
+      "<br> Phone Number: " +phone.value +"<br> Message: " + message.value;
+
+      function sendEmail(){
+
+        Email.send({
+          SecureToken : "99668455-af99-44e8-962f-ed146b732187",
+      To : 'abdallaahnoor@gmail.com',
+      From : "abdallahabdelaziznoor@gmail.com",
+      Subject : "Contact Message",
+      Body : "Name: " +yourName.value + "<br> Email: " +email.value +
+      "<br> Phone Number: " +phone.value +"<br> Message: " + message.value
+  }).then(
+    message => alert("message")
+  );
+      }
+    </script> -->
   </body>
 </html>

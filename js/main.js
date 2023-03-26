@@ -44,7 +44,6 @@ for (i = 0; i < acc.length; i++) {
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
-
     }
   };
 }
@@ -121,3 +120,27 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 /* -------------------------------- Swiper JS ------------------------------- */
+/* ------------------------------- Send Email ------------------------------- */
+var yourName = document.getElementById("yourName");
+var email = document.getElementById("email");
+var phone = document.getElementById("phone");
+var message = document.getElementById("message");
+
+function sendEmail() {
+  Email.send({
+    SecureToken: "99668455-af99-44e8-962f-ed146b732187",
+    To: "abdallaahnoor@gmail.com",
+    From: "abdallahabdelaziznoor@gmail.com",
+    Subject: "Contact Message",
+    Body:
+      "Name: " +
+      yourName.value +
+      "<br> Email: " +
+      email.value +
+      "<br> Phone Number: " +
+      phone.value +
+      "<br> Message: " +
+      message.value,
+  }).then((message) => alert("message"));
+}
+/* ------------------------------- Send Email ------------------------------- */
