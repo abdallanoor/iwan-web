@@ -46,7 +46,6 @@
   fill: white;
 }
 .change-btn {
-  margin-right: 10px;
   background-color: white;
   color: var(--main-color);
 }

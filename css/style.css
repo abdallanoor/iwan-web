@@ -19,6 +19,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  /* direction: rtl; */
 }
 /* Hide scrollbar */
 body::-webkit-scrollbar {
@@ -344,6 +345,7 @@ header .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 10px;
 }
 @media (max-width: 767px) {
   .landing .btns {
@@ -353,12 +355,7 @@ header .container {
     width: 100%;
   }
 }
-@media (max-width: 767px) {
-  .landing .change-btn {
-    margin-right: 0;
-    margin-bottom: 20px;
-  }
-}
+
 
 /* ------------------------------ End Landig ------------------------------ */
 /* ----------------------------- Start About Us ----------------------------- */
@@ -1299,13 +1296,13 @@ span.rd {
   }
 }
 .footer .container .box img {
-  width: 93%;
+  width: 72%;
   display: block;
   margin: auto;
 }
 @media (max-width: 767px) {
   .footer .container .box img {
-    width: 100%;
+    width: 90%;
   }
 }
 .footer .container .box h4 {
