@@ -1,13 +1,10 @@
-/* -------------------------------- nav menu - nav icon -------------------------------- */
-var bar = document.querySelector(".bar");
+var navTrigger = document.querySelector(".navTrigger");
 var navBar = document.querySelector(".nav-bar");
-bar.onclick = function () {
+navTrigger.onclick = function () {
+  navTrigger.classList.toggle("active");
   navBar.classList.toggle("show");
 };
-function changeIcon(x) {
-  x.classList.toggle("fa-xmark");
-}
-/* -------------------------------- nav menu - nav icon -------------------------------- */
+
 /* ---------------------------------- FAQS ---------------------------------- */
 // W3C's JS Code
 var acc = document.getElementsByClassName("accordion");
