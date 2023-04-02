@@ -28,7 +28,7 @@
   font-weight: 600;
   text-transform: uppercase;
   line-height: 19px;
-  letter-spacing: 5px;
+  letter-spacing: 2px;
   background-color: var(--main-color);
   transition: var(--main-transition);
   padding: 15px 25px;
@@ -38,6 +38,7 @@
   border: 1px solid var(--main-color);
   border-radius: 2px;
   transform-style: preserve-3d;
+  text-align: center;
 
 }
 .btn-shap:hover {
