@@ -373,7 +373,7 @@ ul {
 }
 @media (max-width: 767px) {
   .landing .text h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 }
 
@@ -813,6 +813,7 @@ ul {
 @media (max-width: 767px) {
   .about .about-mission {
     padding: 20px;
+    padding-top: 0;
   }
 }
 /* .about .about-mission .title {
@@ -858,6 +859,7 @@ ul {
   max-width: 100%;
   height: auto;
   padding: 20px;
+  padding-bottom: 30px;
   filter: hue-rotate(43deg);
 }
 /* ---------------------------- */
@@ -1090,11 +1092,11 @@ span.rd {
 @keyframes fade {
   from {
     opacity: 0;
-    transform: translateY(10px);
+    /* transform: translateY(10px); */
   }
   to {
     opacity: 1;
-    transform: translateY(0px);
+    /* transform: translateY(0px); */
   }
 }
 /* ------------------------------ End Pricing ----------------------------- */
