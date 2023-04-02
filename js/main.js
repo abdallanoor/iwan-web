@@ -140,6 +140,17 @@ goUp.onclick = function () {
   });
 };
 /* ---------------------------------- go up --------------------------------- */
+/* -------------------------------- WhatsApp -------------------------------- */
+var wtsappIcon = document.querySelector(".wtsapp-icon");
+var whatsappWidget = document.querySelector(".whatsapp-Widget");
+var close = document.querySelector(".close");
+wtsappIcon.onclick = function () {
+  whatsappWidget.classList.toggle("show");
+};
+close.onclick = function () {
+  whatsappWidget.classList.remove("show");
+};
+/* -------------------------------- WhatsApp -------------------------------- */
 /* -------------------------------- Swiper JS ------------------------------- */
 var swiper = new Swiper(".mySwiper", {
   grabCursor: true,
