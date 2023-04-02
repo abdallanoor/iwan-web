@@ -1,10 +1,11 @@
+/* --------------------------------- navBar --------------------------------- */
 var navTrigger = document.querySelector(".navTrigger");
 var navBar = document.querySelector(".nav-bar");
 navTrigger.onclick = function () {
   navTrigger.classList.toggle("active");
   navBar.classList.toggle("show");
 };
-
+/* --------------------------------- navBar --------------------------------- */
 /* ---------------------------------- FAQS ---------------------------------- */
 // W3C's JS Code
 var acc = document.getElementsByClassName("accordion");
@@ -98,6 +99,47 @@ tabs.forEach((tab, index) => {
 // to run the animation initially when the page load
 // tabs[0].click();
 /* ------------------------------ Pricing page ------------------------------ */
+/* ------------------------------- Send Email ------------------------------- */
+var yourName = document.getElementById("yourName");
+var email = document.getElementById("email");
+var phone = document.getElementById("phone");
+var message = document.getElementById("message");
+var massageAccept = document.querySelector(".massage-accept");
+
+function sendEmail() {
+  Email.send({
+    SecureToken: "99668455-af99-44e8-962f-ed146b732187",
+    To: "abdallaahnoor@gmail.com",
+    From: "abdallahabdelaziznoor@gmail.com",
+    Subject: "Contact Message",
+    Body:
+      "Name: " +
+      yourName.value +
+      "<br> Email: " +
+      email.value +
+      "<br> Phone Number: " +
+      phone.value +
+      "<br> Message: " +
+      message.value,
+  }).then((message) => massageAccept.classList.add("show"));
+}
+/* ------------------------------- Send Email ------------------------------- */
+/* ---------------------------------- go up --------------------------------- */
+var goUp = document.querySelector(".go-up");
+window.onscroll = function () {
+  if (this.scrollY >= 75) {
+    goUp.classList.add("show");
+  } else {
+    goUp.classList.remove("show");
+  }
+};
+goUp.onclick = function () {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+/* ---------------------------------- go up --------------------------------- */
 /* -------------------------------- Swiper JS ------------------------------- */
 var swiper = new Swiper(".mySwiper", {
   grabCursor: true,
@@ -117,27 +159,3 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 /* -------------------------------- Swiper JS ------------------------------- */
-/* ------------------------------- Send Email ------------------------------- */
-var yourName = document.getElementById("yourName");
-var email = document.getElementById("email");
-var phone = document.getElementById("phone");
-var message = document.getElementById("message");
-
-function sendEmail() {
-  Email.send({
-    SecureToken: "99668455-af99-44e8-962f-ed146b732187",
-    To: "abdallaahnoor@gmail.com",
-    From: "abdallahabdelaziznoor@gmail.com",
-    Subject: "Contact Message",
-    Body:
-      "Name: " +
-      yourName.value +
-      "<br> Email: " +
-      email.value +
-      "<br> Phone Number: " +
-      phone.value +
-      "<br> Message: " +
-      message.value,
-  }).then((message) => alert("message"));
-}
-/* ------------------------------- Send Email ------------------------------- */
