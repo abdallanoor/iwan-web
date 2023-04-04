@@ -355,11 +355,11 @@ ul {
     width: 105px;
   }
 }
-/* @media (max-width: 767px) {
+@media (max-width: 767px) {
   .logo {
     width: 130px;
   }
-} */
+}
 .nav-links li {
   display: inline-block;
 }
@@ -651,6 +651,11 @@ ul {
 .courses-page .cour-des img {
   width: 40%;
   padding: 30px;
+}
+@media (max-width: 991px) {
+  .courses-page .cour-des img {
+    padding: 0px;
+  }
 }
 @media (max-width: 767px) {
   .courses-page .cour-des img {
