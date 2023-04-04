@@ -148,6 +148,8 @@ ul {
   position: fixed;
   bottom: 20px;
   left: 20px;
+  width: 49px;
+  height: 49px;
   cursor: pointer;
   opacity: 0;
   transition: opacity 1s;
@@ -1237,7 +1239,7 @@ span.rd {
   border: none;
   border-bottom: solid 1px #ccc;
   margin-bottom: 15px;
-  padding: 15px;
+  padding:  15px;
   background-color: white;
   font-size: 16px;
   box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.1);
@@ -1247,7 +1249,7 @@ span.rd {
 }
 .contact .form textarea {
   resize: none;
-  height: 120px;
+  height: 100px;
 }
 textarea::placeholder,
 input::placeholder {
