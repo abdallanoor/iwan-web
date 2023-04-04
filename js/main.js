@@ -15,6 +15,12 @@ navTrigger.onclick = function () {
   navTrigger.classList.toggle("active");
   navBar.classList.toggle("show");
 };
+document.onclick = function (e) {
+  if (!navTrigger.contains(e.target) && !navBar.contains(e.target)) {
+    navTrigger.classList.remove("active");
+    navBar.classList.remove("show");
+  }
+};
 /* --------------------------------- Nav Bar --------------------------------- */
 /* ------------------------------ Pricing page ------------------------------ */
 var tabs = document.querySelectorAll(".tabs li");
