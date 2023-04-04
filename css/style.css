@@ -1237,12 +1237,12 @@ span.rd {
   display: block;
   width: 100%;
   border: none;
-  border-bottom: solid 1px #ccc;
+  border: solid 2px #eee;
   margin-bottom: 15px;
   padding:  15px;
   background-color: white;
   font-size: 16px;
-  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.1); */
 }
 .contact .form .input:focus {
   outline: none;
