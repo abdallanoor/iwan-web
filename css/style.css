@@ -127,6 +127,12 @@ ul {
   background-color: var(--main-alt-color);
   padding: 10px;
 }
+/* nav fixed */
+@media (max-width: 767px) {
+  .head {
+    margin-top: 75px;
+  }
+}
 .head .container {
   padding-top: 20px;
   padding-bottom: 20px;
@@ -339,6 +345,17 @@ ul {
 /* ------------------------------ End Watsapp Button ----------------------------- */
 /* ---------------------------- End global Rules ---------------------------- */
 /* ------------------------------ Start navigation ------------------------------ */
+@media (max-width: 767px) {
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 99;
+    background-color: white;
+    box-shadow: 0 0 4px #00000029;
+  }
+}
 .header .container {
   position: relative;
   display: flex;
@@ -357,7 +374,7 @@ ul {
 }
 @media (max-width: 767px) {
   .logo {
-    width: 130px;
+    width: 120px;
   }
 }
 .nav-links li {
@@ -503,6 +520,12 @@ ul {
   background-image: url(../images/bg.png);
   background-size: 100px auto;
   background-color: #f7fdff;
+}
+/* nav fixed */
+@media (max-width: 767px) {
+  .landing {
+    margin-top: 75px;
+  }
 }
 .landing .container {
   height: calc(100vh - 79px);
@@ -660,7 +683,6 @@ ul {
 @media (max-width: 767px) {
   .courses-page .cour-des img {
     width: 90%;
-    padding: 0px;
   }
 }
 
