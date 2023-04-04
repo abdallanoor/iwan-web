@@ -159,7 +159,7 @@ ul {
   cursor: pointer;
   opacity: 0;
   transition: opacity 1s;
-  z-index: 8;
+  z-index: 5;
 }
 .go-up.show {
   opacity: 1;
@@ -170,7 +170,7 @@ ul {
   display: block;
   margin: 30px auto 0;
   width: fit-content;
-  z-index: 8;
+  z-index: 5;
 }
 
 @media (max-width: 767px) {
@@ -202,7 +202,7 @@ ul {
   background-color: var(--main-color);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 12px 24px 0px;
   color: white;
-  z-index: 8;
+  z-index: 5;
   border: none;
 }
 
@@ -235,7 +235,7 @@ ul {
   bottom: 97px;
   right: 20px;
   overflow: hidden;
-  z-index: 8;
+  z-index: 5;
   display: none;
 }
 @media (max-width: 767px) {
@@ -490,7 +490,7 @@ ul {
     padding: 0;
     overflow: hidden;
     transition: all 0.4s;
-    z-index: 8;
+    z-index: 5;
   }
   .nav-bar.show {
     height: 209px;
@@ -974,7 +974,7 @@ ul {
 .about .about-mission .word {
   color: var(--main-color);
   font-size: 25px;
-  font-weight: 400;
+  font-weight: 500;
   margin-bottom: 15px;
   line-height: 1.5;
 }
@@ -1640,7 +1640,7 @@ input::placeholder {
   height: 100vh;
   width: 100%;
   background-color: #f9f7fb;
-  z-index: 9;
+  z-index: 99999;
   transition: opacity 0.75s, visibility 0.75s;
 }
 .hide-loader {
