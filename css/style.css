@@ -174,7 +174,7 @@ ul {
 /* nav fixed */
 @media (max-width: 767px) {
   .head {
-    margin-top: 75px;
+    margin-top: 74px;
   }
 }
 .head .container {
@@ -565,7 +565,7 @@ ul {
 /* nav fixed */
 @media (max-width: 767px) {
   .landing {
-    margin-top: 75px;
+    margin-top: 74px;
   }
 }
 .landing .container {
@@ -1004,7 +1004,6 @@ ul {
 .about {
   padding-top: var(--padding-page);
   padding-bottom: var(--padding-page);
-  background-color: var(--section-background);
 }
 .about .about-mission {
   text-align: center;
@@ -1059,7 +1058,7 @@ ul {
 .packageprice {
   padding-top: var(--padding-page);
   padding-bottom: var(--padding-page);
-  background-color: #f4f6f7;
+  background-color:var(--section-background);
   text-align: center;
 }
 .tagLine {
@@ -1672,4 +1671,3 @@ input::placeholder {
   }
 }
 /* ---------------------------- End Animations ---------------------------- */
-
