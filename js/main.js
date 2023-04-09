@@ -30,8 +30,9 @@ tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => {
     // to remove uk-active class from previous tab
     tabs.forEach((tab) => tab.classList.remove("uk-active"));
-    tab.classList.add("uk-active");
+    
     // to show content according to tab selected
+    tab.classList.add("uk-active");
 
     // to hide previous tab content
     contents.forEach((c) => c.classList.remove("uk-active"));
@@ -195,4 +196,9 @@ wtsappIcon.onclick = function () {
 close.onclick = function () {
   whatsappWidget.classList.remove("show");
 };
+// document.onclick = function (e) {
+//   if (!whatsappWidget.contains(e.target) && !wtsappIcon.contains(e.target)) {
+//     whatsappWidget.classList.remove("show");
+//   }
+// };
 /* -------------------------------- WhatsApp -------------------------------- */
