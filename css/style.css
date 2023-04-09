@@ -409,6 +409,8 @@ ul {
   padding-bottom: 5px;
   align-items: center;
   justify-content: space-between;
+  /* shadow for clip-path */
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
 }
 .logo {
   width: 130px;
@@ -524,7 +526,7 @@ ul {
 /* ---------------------------- */
 
 @media (max-width: 767px) {
-  .nav-bar {
+  /* .nav-bar {
     position: absolute;
     height: 0;
     top: 100%;
@@ -539,17 +541,38 @@ ul {
     z-index: 5;
   }
   .nav-bar.show {
-    height: 209px;
+    height: 206px;
     padding: 5px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
+  } */
+  .nav-bar {
+    position: absolute;
+    clip-path: inset(0 0 100% 0);
+    top: 100%;
+    left: 0;
+    right: 0;
+    width: 100%;
+    background-color: white;
+    color: #121413;
+    padding: 0;
+    overflow: hidden;
+    transition: all 0.4s ease;
+    z-index: 6;
+    padding: 5px;
+  }
+  .header .container {
+    /* shadow for clip-path */
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.1));
+  }
+  .nav-bar.show {
+    clip-path: inset(0 0 0 0);;
   }
   .nav-bar ul {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    animation: fade 1s ease;
-    transition: all 0.4s;
+    transition: all 0.4s ease;
     opacity: 0;
   }
   .nav-bar.show ul {
