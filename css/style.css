@@ -539,7 +539,8 @@ ul {
     z-index: 5;
   }
   .nav-bar.show {
-    height: 196px;
+    height:200px;
+    padding-bottom: 5px;
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.1);
   }
   .nav-bar ul {
