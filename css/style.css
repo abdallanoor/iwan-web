@@ -245,7 +245,7 @@ ul {
   transition: 0.3s ease;
   visibility: hidden;
   opacity: 0;
-  transform: translateY(15px);
+  transform: translateY(10px);
 }
 @media (max-width: 767px) {
   .whatsapp-Widget {
@@ -358,7 +358,7 @@ ul {
   display: block;
   margin: 30px auto 0;
   width: fit-content;
-  z-index: 5;
+  z-index: 6;
 }
 
 @media (max-width: 767px) {
@@ -486,40 +486,40 @@ ul {
 }
 
 .navTrigger i:nth-child(1) {
-  -webkit-animation: outT 0.8s backwards;
-  animation: outT 0.8s backwards;
+  -webkit-animation: outT 0.5s backwards;
+  animation: outT 0.5s backwards;
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
 }
 
 .navTrigger i:nth-child(2) {
   margin: 5px 0;
-  -webkit-animation: outM 0.8s backwards;
-  animation: outM 0.8s backwards;
+  -webkit-animation: outM 0.5s backwards;
+  animation: outM 0.5s backwards;
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
 }
 
 .navTrigger i:nth-child(3) {
-  -webkit-animation: outBtm 0.8s backwards;
-  animation: outBtm 0.8s backwards;
+  -webkit-animation: outBtm 0.5s backwards;
+  animation: outBtm 0.5s backwards;
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
 }
 
 .navTrigger.active i:nth-child(1) {
-  -webkit-animation: inT 0.8s forwards;
-  animation: inT 0.8s forwards;
+  -webkit-animation: inT 0.5s forwards;
+  animation: inT 0.5s forwards;
 }
 
 .navTrigger.active i:nth-child(2) {
-  -webkit-animation: inM 0.8s forwards;
-  animation: inM 0.8s forwards;
+  -webkit-animation: inM 0.5s forwards;
+  animation: inM 0.5s forwards;
 }
 
 .navTrigger.active i:nth-child(3) {
-  -webkit-animation: inBtm 0.8s forwards;
-  animation: inBtm 0.8s forwards;
+  -webkit-animation: inBtm 0.5s forwards;
+  animation: inBtm 0.5s forwards;
 }
 /* ---------------------------- */
 
