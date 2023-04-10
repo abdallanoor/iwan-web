@@ -1,13 +1,3 @@
-/* --------------------------------- Loader --------------------------------- */
-window.addEventListener("load", () => {
-  const spinner = document.querySelector(".spinner");
-  spinner.classList.add("hide-loader");
-
-  spinner.addEventListener("transitioned", () => {
-    document.body.removeChild("spinner");
-  });
-});
-/* --------------------------------- Loader --------------------------------- */
 /* --------------------------------- Nav Bar --------------------------------- */
 var navTrigger = document.querySelector(".navTrigger");
 var navBar = document.querySelector(".nav-bar");
@@ -30,7 +20,7 @@ tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => {
     // to remove uk-active class from previous tab
     tabs.forEach((tab) => tab.classList.remove("uk-active"));
-    
+
     // to show content according to tab selected
     tab.classList.add("uk-active");
 
@@ -40,65 +30,7 @@ tabs.forEach((tab, index) => {
   });
 });
 /* ------------------------------ Pricing page ------------------------------ */
-/* ------------------------------- Send Email ------------------------------- */
-var yourName = document.getElementById("yourName");
-var email = document.getElementById("email");
-var phone = document.getElementById("phone");
-var message = document.getElementById("message");
-var massageAccept = document.querySelector(".massage-accept");
-
-function sendEmail() {
-  Email.send({
-    SecureToken: "99668455-af99-44e8-962f-ed146b732187",
-    To: "abdallaahnoor@gmail.com",
-    From: "abdallahabdelaziznoor@gmail.com",
-    Subject: "Contact Message",
-    Body:
-      "Name: " +
-      yourName.value +
-      "<br> Email: " +
-      email.value +
-      "<br> Phone Number: " +
-      phone.value +
-      "<br> Message: " +
-      message.value,
-  }).then((message) => massageAccept.classList.add("show"));
-}
-/* ------------------------------- Send Email ------------------------------- */
-/* -------------------------------- Swiper JS ------------------------------- */
-var swiper = new Swiper(".mySwiper", {
-  grabCursor: true,
-  centeredSlides: true,
-  loop: true,
-  autoplay: {
-    delay: 5000,
-    disableOnInteraction: false,
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-  },
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
-/* -------------------------------- Swiper JS ------------------------------- */
 /* ---------------------------------- Accordion ---------------------------------- */
-// var acc = document.getElementsByClassName("accordion");
-// var i;
-
-// for (i = 0; i < acc.length; i++) {
-//   acc[i].addEventListener("click", function() {
-//     this.classList.toggle("active");
-//     var panel = this.nextElementSibling;
-//     if (panel.style.maxHeight) {
-//       panel.style.maxHeight = null;
-//     } else {
-//       panel.style.maxHeight = panel.scrollHeight + "px";
-//     }
-//   });
-// }
 var acc = document.getElementsByClassName("accordion");
 var i;
 
@@ -107,28 +39,27 @@ for (i = 0; i < acc.length; i++) {
   acc[i].onclick = function () {
     // For toggling purposes detect if the clicked section is already "active"
     var isActive = this.classList.contains("active");
-
     // Close all accordions
     var allAccordions = document.getElementsByClassName("accordion");
     for (j = 0; j < allAccordions.length; j++) {
       // Remove active class from section header
       allAccordions[j].classList.remove("active");
-
+      
       // Remove the max-height class from the panel to close it
       var panel = allAccordions[j].nextElementSibling;
       var maxHeightValue = getStyle(panel, "maxHeight");
-
+      
       if (maxHeightValue !== "0px") {
         panel.style.maxHeight = null;
       }
     }
     // Toggle the clicked section using a ternary operator
     isActive ? this.classList.remove("active") : this.classList.add("active");
-
+    
     // Toggle the panel element
     var panel = this.nextElementSibling;
     var maxHeightValue = getStyle(panel, "maxHeight");
-
+    
     if (maxHeightValue !== "0px") {
       panel.style.maxHeight = null;
     } else {
@@ -139,7 +70,7 @@ for (i = 0; i < acc.length; i++) {
 
 function getStyle(el, styleProp) {
   var value,
-    defaultView = (el.ownerDocument || document).defaultView;
+  defaultView = (el.ownerDocument || document).defaultView;
   // W3C standard way:
   if (defaultView && defaultView.getComputedStyle) {
     // sanitize property name to css notation
@@ -157,7 +88,7 @@ function getStyle(el, styleProp) {
     if (/^\d+(em|pt|%|ex)?$/i.test(value)) {
       return (function (value) {
         var oldLeft = el.style.left,
-          oldRsLeft = el.runtimeStyle.left;
+        oldRsLeft = el.runtimeStyle.left;
         el.runtimeStyle.left = el.currentStyle.left;
         el.style.left = value || 0;
         value = el.style.pixelLeft + "px";
@@ -168,6 +99,7 @@ function getStyle(el, styleProp) {
     }
     return value;
   }
+  
 }
 /* ---------------------------------- Accordion ---------------------------------- */
 /* ---------------------------------- go up --------------------------------- */
@@ -196,9 +128,5 @@ wtsappIcon.onclick = function () {
 close.onclick = function () {
   whatsappWidget.classList.remove("show");
 };
-// document.onclick = function (e) {
-//   if (!whatsappWidget.contains(e.target) && !wtsappIcon.contains(e.target)) {
-//     whatsappWidget.classList.remove("show");
-//   }
-// };
 /* -------------------------------- WhatsApp -------------------------------- */
+
